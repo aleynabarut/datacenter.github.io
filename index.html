@@ -1,0 +1,36 @@
+<!-- Mevcut HTML sayfanız -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Diğer sayfa içeriği -->
+
+    <!-- Arıza kayıt formunu açacak düğme -->
+    <button onclick="openArizaForm()">Arıza Kayıt Formu Aç</button>
+
+    <!-- Arıza kayıt formu container'ı (gizli durumda) -->
+    <div id="arizaFormContainer" class="ariza-form-container">
+        <span onclick="closeArizaForm()" class="close-btn">&times;</span>
+
+        <!-- Arıza kayıt formu -->
+        <form id="arizaForm">
+            <label for="arizaKonu">Arıza Konusu:</label>
+            <input type="text" id="arizaKonu" name="arizaKonu" required>
+
+            <label for="arizaAciklama">Arıza Açıklama:</label>
+            <textarea id="arizaAciklama" name="arizaAciklama" required></textarea>
+
+            <input type="submit" value="Kayıt Et">
+        </form>
+    </div>
+
+    <!-- JavaScript dosyanızı ekleyin -->
+    <script src="script.js"></script>
+</body>
+</html>
