@@ -1,36 +1,84 @@
-<!-- Mevcut HTML sayfanız -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Data Center Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <!-- Diğer sayfa içeriği -->
+    <header>
+        <div class="container">
+            <h1>Data Center Solutions</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Arıza kayıt formunu açacak düğme -->
-    <button onclick="openArizaForm()">Arıza Kayıt Formu Aç</button>
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Our Data Center</h2>
+            <p>Reliable and Secure Hosting Solutions</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
 
-    <!-- Arıza kayıt formu container'ı (gizli durumda) -->
-    <div id="arizaFormContainer" class="ariza-form-container">
-        <span onclick="closeArizaForm()" class="close-btn">&times;</span>
+    <section id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <img src="icon1.png" alt="Icon 1">
+                <h3>High Performance</h3>
+                <p>Our data center ensures high performance and low latency.</p>
+            </div>
+            <!-- Add more features as needed -->
+        </div>
+    </section>
 
-        <!-- Arıza kayıt formu -->
-        <form id="arizaForm">
-            <label for="arizaKonu">Arıza Konusu:</label>
-            <input type="text" id="arizaKonu" name="arizaKonu" required>
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Web Hosting</h3>
+                <p>Reliable web hosting services for your business.</p>
+            </div>
+            <!-- Add more services as needed -->
+        </div>
+    </section>
 
-            <label for="arizaAciklama">Arıza Açıklama:</label>
-            <textarea id="arizaAciklama" name="arizaAciklama" required></textarea>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <input type="submit" value="Kayıt Et">
-        </form>
-    </div>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
 
-    <!-- JavaScript dosyanızı ekleyin -->
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Data Center Solutions</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
